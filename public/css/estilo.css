@@ -40,3 +40,46 @@ h3 {
     background-color: #FFA000;
     border-color: #FFA000;
 }
+main.container {
+    max-width: 450px;
+    
+}
+.alert-primary {
+    background-color: #FFA000;
+    color: white;
+    animation-name: alert-example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 5px 8px grey, 10px 10px 8px #FFA000, 15px 15px 8px #cccc;
+}
+#erro{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    height: 150px;
+   
+}
+@keyframes alert-example {
+    0% {
+        border: 1px solid;
+        padding: 5px;
+        box-shadow: 5px 5px 8px grey, 10px 10px 8px #FFA000, 15px 15px 8px #cccc;
+    }
+    50% {
+        border: 1px solid;
+        padding: 15px;
+        box-shadow: 5px 5px 8px #FFA000, 10px 10px 8px grey, 15px 15px 8px #FFA000;
+    }
+    75% {
+        border: 1px solid;
+        padding: 10px;
+        box-shadow: 5px 5px 8px #FFA000, 10px 10px 8px grey, 15px 15px 8px #cccc;
+    }
+    100% {
+        border: 1px solid;
+        padding: 15px;
+        box-shadow: 5px 5px 8px #FFA000, 10px 10px 8px grey, 15px 15px 8px #FFA000;
+    }
+  }

@@ -18,5 +18,10 @@ module.exports = {
     console.log(nome, email, mensagem)
     res.render('contato', {nome, email, mensagem, title: 'contato'})
     
+  },
+  newsletter : (req, res) => {
+    const {nome, email} = req.body;
+    res.render('sucesso', {nome, email, title: 'Newsletter Sucesso'})
+    
   }
 }
