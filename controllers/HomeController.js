@@ -12,5 +12,11 @@ module.exports = {
        'imagens/img4.jpg'
     ]
     res.render('index', {title: 'Home', listaServico: servicos, listBanner: banner})
+  },
+  contato : (req, res) => {
+    const {nome, email, mensagem} = req.body;
+    console.log(nome, email, mensagem)
+    res.render('contato', {nome, email, mensagem, title: 'contato'})
+    
   }
 }
